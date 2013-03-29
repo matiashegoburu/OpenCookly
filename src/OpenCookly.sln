@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly", "OpenCookly\OpenCookly.csproj", "{09C0C1CF-0C39-400B-9016-3565B9839408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.DAL", "OpenCookly.DAL\OpenCookly.DAL.csproj", "{055927B3-3CCA-4B42-B66D-8A51892576AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Entities", "OpenCookly.Entities\OpenCookly.Entities.csproj", "{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.BL", "OpenCookly.BL\OpenCookly.BL.csproj", "{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|x86.Build.0 = Debug|Any CPU
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Release|x86.ActiveCfg = Release|Any CPU
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Release|x86.Build.0 = Release|Any CPU
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|x86.ActiveCfg = Debug|x86
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|x86.Build.0 = Debug|x86
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Release|x86.ActiveCfg = Release|x86
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Release|x86.Build.0 = Release|x86
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.Build.0 = Release|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|x86.Build.0 = Debug|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Release|x86.ActiveCfg = Release|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = OpenCookly\OpenCookly.csproj
+	EndGlobalSection
+EndGlobal

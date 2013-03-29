@@ -57,6 +57,15 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="Hegoburu.Presentation.Desktop.Core.Gtk">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.Gtk.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\lib\StructureMap.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -69,6 +78,7 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bootstrapper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
