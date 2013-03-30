@@ -30,10 +30,60 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.DAL.Core">
+      <HintPath>..\..\lib\Hegoburu.DAL.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.DAL.Core.NHibernate">
+      <HintPath>..\..\lib\Hegoburu.DAL.Core.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper">
+      <HintPath>..\..\lib\Bootstrapper 2.0.3.0\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper.ServiceLocator">
+      <HintPath>..\..\lib\Bootstrapper.ServiceLocator 2.0.0.0\Bootstrapper.ServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMapAdapter">
+      <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\StructureMapAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper.StructureMap">
+      <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\Bootstrapper.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="StartupTasks\SetupNHibernate.cs" />
+    <Compile Include="StartupTasks\SetupStructureMap.cs" />
+    <Compile Include="StartupTasks\SetupServiceLocator.cs" />
+    <Compile Include="StartupTasks\SetupModules.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCookly.Common\OpenCookly.Common.csproj">
+      <Project>{DF2359DE-454B-47A5-8497-8315F105C8B9}</Project>
+      <Name>OpenCookly.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCookly.DAL\OpenCookly.DAL.csproj">
+      <Project>{055927B3-3CCA-4B42-B66D-8A51892576AC}</Project>
+      <Name>OpenCookly.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StartupTasks\" />
+  </ItemGroup>
 </Project>

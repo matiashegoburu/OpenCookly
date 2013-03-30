@@ -5,34 +5,102 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly", "OpenCookly\Op
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.DAL", "OpenCookly.DAL\OpenCookly.DAL.csproj", "{055927B3-3CCA-4B42-B66D-8A51892576AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Entities", "OpenCookly.Entities\OpenCookly.Entities.csproj", "{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Common.Entities", "OpenCookly.Entities\OpenCookly.Common.Entities.csproj", "{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.BL", "OpenCookly.BL\OpenCookly.BL.csproj", "{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Modules.Core.BL", "OpenCookly.BL\OpenCookly.Modules.Core.BL.csproj", "{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Modules.Core.Entities", "OpenCookly.Modules.Core.Entities\OpenCookly.Modules.Core.Entities.csproj", "{E9343E76-83E5-43D2-A21F-3DB55BA2C078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Common.Bootstrap", "OpenCookly.Common.Bootstrap\OpenCookly.Common.Bootstrap.csproj", "{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Modules.Core", "OpenCookly.Modules.Core\OpenCookly.Modules.Core.csproj", "{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Common", "OpenCookly.Common\OpenCookly.Common.csproj", "{DF2359DE-454B-47A5-8497-8315F105C8B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Debug|x86.Build.0 = Debug|Any CPU
 		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Release|x86.ActiveCfg = Release|Any CPU
 		{055927B3-3CCA-4B42-B66D-8A51892576AC}.Release|x86.Build.0 = Release|Any CPU
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|x86.ActiveCfg = Debug|x86
 		{09C0C1CF-0C39-400B-9016-3565B9839408}.Debug|x86.Build.0 = Debug|x86
 		{09C0C1CF-0C39-400B-9016-3565B9839408}.Release|x86.ActiveCfg = Release|x86
 		{09C0C1CF-0C39-400B-9016-3565B9839408}.Release|x86.Build.0 = Release|x86
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Debug|x86.Build.0 = Debug|Any CPU
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Release|x86.ActiveCfg = Release|Any CPU
+		{42B0D7DB-FCBD-41A1-94B3-F78E6EB7864F}.Release|x86.Build.0 = Release|Any CPU
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|x86.Build.0 = Debug|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.ActiveCfg = Release|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.Build.0 = Release|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|x86.Build.0 = Debug|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Release|x86.ActiveCfg = Release|Any CPU
+		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Release|x86.Build.0 = Release|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Debug|x86.Build.0 = Debug|Any CPU
 		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Release|x86.ActiveCfg = Release|Any CPU
 		{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}.Release|x86.Build.0 = Release|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF2359DE-454B-47A5-8497-8315F105C8B9}.Release|x86.Build.0 = Release|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Debug|x86.Build.0 = Debug|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Release|x86.ActiveCfg = Release|Any CPU
+		{E9343E76-83E5-43D2-A21F-3DB55BA2C078}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = OpenCookly\OpenCookly.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = VisualStudio
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.IndentSwitchBody = True
+		$3.AnonymousMethodBraceStyle = NextLine
+		$3.PropertyBraceStyle = NextLine
+		$3.PropertyGetBraceStyle = NextLine
+		$3.PropertySetBraceStyle = NextLine
+		$3.EventBraceStyle = NextLine
+		$3.EventAddBraceStyle = NextLine
+		$3.EventRemoveBraceStyle = NextLine
+		$3.StatementBraceStyle = NextLine
+		$3.ArrayInitializerBraceStyle = NextLine
+		$3.BeforeMethodDeclarationParentheses = False
+		$3.BeforeMethodCallParentheses = False
+		$3.BeforeConstructorDeclarationParentheses = False
+		$3.BeforeDelegateDeclarationParentheses = False
+		$3.NewParentheses = False
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
 	EndGlobalSection
 EndGlobal

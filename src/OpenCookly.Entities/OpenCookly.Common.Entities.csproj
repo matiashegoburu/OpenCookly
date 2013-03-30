@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenCookly.Entities</RootNamespace>
-    <AssemblyName>OpenCookly.Entities</AssemblyName>
+    <RootNamespace>OpenCookly.Common.Entities</RootNamespace>
+    <AssemblyName>OpenCookly.Common.Entities</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

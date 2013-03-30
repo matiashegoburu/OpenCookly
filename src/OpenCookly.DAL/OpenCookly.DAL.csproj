@@ -48,13 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Setup.cs" />
+    <Compile Include="MonoSQLiteConfiguration.cs" />
+    <Compile Include="MonoSQLiteDriver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\OpenCookly.Entities\OpenCookly.Entities.csproj">
+    <ProjectReference Include="..\OpenCookly.Entities\OpenCookly.Common.Entities.csproj">
       <Project>{C76F3CC8-7EF9-49AE-92C6-BECFA5D57785}</Project>
-      <Name>OpenCookly.Entities</Name>
+      <Name>OpenCookly.Common.Entities</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
