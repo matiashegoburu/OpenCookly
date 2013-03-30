@@ -1,4 +1,5 @@
 using System;
+using Mono.Data.Sqlite;
 
 namespace OpenCookly.DAL
 {
@@ -6,10 +7,11 @@ namespace OpenCookly.DAL
     {  
         public MonoSQLiteDriver() 
             : base(
-            "Mono.Data.Sqlite",
-            "Mono.Data.Sqlite",  
-            "Mono.Data.Sqlite.SqliteConnection",  
-            "Mono.Data.Sqlite.SqliteCommand")
+            typeof(SqliteDataReader).Assembly.FullName, //"Mono.Data.Sqlite",
+            typeof(SqliteDataReader).Assembly.FullName, //"Mono.Data.Sqlite",  
+            typeof(SqliteConnection).FullName, //"Mono.Data.Sqlite.SqliteConnection",  
+            typeof(SqliteCommand).FullName //"Mono.Data.Sqlite.SqliteCommand"
+            )
         {  
         }
 

@@ -22,12 +22,6 @@ namespace OpenCookly.Common.Bootstrap.StartupTasks
 		#region IStartupTask implementation
         public void Run()
         {
-            // HACK: If I dont do this, it fails to load the assembly, eventhough it is referenced, because by the time
-            // it is being accessed, it is not loaded in the app domain, and nhibernate will try to load it using only the
-            // partial name of the assembly, which fails beacuse it is not a local assembly.
-            // I could also use Assembly.Load with the fully qualified name.
-            Assembly.LoadWithPartialName("Mono.Data.Sqlite");
-
             var container = (IContainer)Bootstrapper.Container;
 
             var entitiesAssemblies = new List<Assembly>();
