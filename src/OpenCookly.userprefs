@@ -1,41 +1,46 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OpenCookly.Common.Bootstrap/StartupTasks/SetupNHibernate.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenCookly.Common.Bootstrap/StartupTasks/SetupModules.cs">
     <Files>
-      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupNHibernate.cs" Line="63" Column="1" />
-      <File FileName="OpenCookly.Common.Bootstrap/Bootstrapper.cs" Line="44" Column="27" />
-      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupStructureMap.cs" Line="30" Column="23" />
+      <File FileName="OpenCookly.Modules.Core.Entities/IngredientInRecipe.cs" Line="16" Column="1" />
+      <File FileName="OpenCookly.Modules.Core.Entities/Recipe.cs" Line="11" Column="1" />
+      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupModules.cs" Line="14" Column="38" />
+      <File FileName="OpenCookly.Modules.Core/Module.cs" Line="22" Column="1" />
       <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupServiceLocator.cs" Line="20" Column="4" />
-      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupModules.cs" Line="18" Column="34" />
-      <File FileName="OpenCookly.DAL/MonoSQLiteDriver.cs" Line="14" Column="1" />
-      <File FileName="OpenCookly.Entities/BaseEntity.cs" Line="11" Column="1" />
-      <File FileName="OpenCookly/Main.cs" Line="19" Column="1" />
-      <File FileName="Disassembly" />
+      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupNHibernate.cs" Line="62" Column="1" />
+      <File FileName="OpenCookly.Common.Bootstrap/StartupTasks/SetupStructureMap.cs" Line="30" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="OpenCookly.Common.Bootstrap" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="StartupTasks" expanded="True" />
+            <Node name="StartupTasks" expanded="True">
+              <Node name="SetupModules.cs" selected="True" />
+            </Node>
           </Node>
-          <Node name="OpenCookly.Common.Entities" expanded="True" />
-          <Node name="OpenCookly.DAL" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
+          <Node name="OpenCookly.DAL" expanded="True" />
+          <Node name="OpenCookly.Modules.Core" expanded="True" />
+          <Node name="OpenCookly.Modules.Core.BL" expanded="True" />
+          <Node name="OpenCookly.Modules.Core.Entities" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>typeof(SqliteConnection)</Value>
+        </State>
+      </Pad>
       <Pad Id="ConnectionManagerPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True">
+          <Node name="Recetarios" selected="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly/Main.cs" line="12" />
       <Catchpoint exceptionName="Mono.Xml.SmallXmlParserException" />
       <Catchpoint exceptionName="System.AccessViolationException" />
       <Catchpoint exceptionName="System.AggregateException" />
@@ -173,8 +178,7 @@
       <Catchpoint exceptionName="System.TypeUnloadedException" />
       <Catchpoint exceptionName="System.UnauthorizedAccessException" />
       <Catchpoint exceptionName="System.UriFormatException" />
-      <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.DAL/MonoSQLiteDriver.cs" line="8" />
-      <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.DAL/MonoSQLiteDriver.cs" line="13" />
+      <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.Modules.Core/Module.cs" line="20" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
