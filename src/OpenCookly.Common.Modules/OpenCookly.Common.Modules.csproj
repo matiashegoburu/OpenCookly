@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DF2359DE-454B-47A5-8497-8315F105C8B9}</ProjectGuid>
+    <ProjectGuid>{7C0C99F6-9542-4CBA-B8A2-33E7BA702AD3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenCookly.Common</RootNamespace>
-    <AssemblyName>OpenCookly.Common</AssemblyName>
+    <RootNamespace>OpenCookly.Common.Modules</RootNamespace>
+    <AssemblyName>OpenCookly.Common.Modules</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug</OutputPath>
+    <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -23,16 +23,32 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="StructureMap">
+      <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core.Gtk">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.Gtk.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyClass.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IActivity.cs" />
+    <Compile Include="IModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

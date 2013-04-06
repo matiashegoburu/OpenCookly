@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B2D5151-D245-4BF4-967F-341EDDBB0A5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenCookly.Modules.Core.UI</RootNamespace>
+    <AssemblyName>OpenCookly.Modules.Core.UI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core.Gtk">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.Gtk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Models\RecipeModel.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\postsharp\PostSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCookly.Common.UI\OpenCookly.Common.UI.csproj">
+      <Project>{BF1A76D9-16A3-440F-8154-E6C5792931D7}</Project>
+      <Name>OpenCookly.Common.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenCookly.Modules.Core.Entities\OpenCookly.Modules.Core.Entities.csproj">
+      <Project>{E9343E76-83E5-43D2-A21F-3DB55BA2C078}</Project>
+      <Name>OpenCookly.Modules.Core.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

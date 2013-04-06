@@ -82,6 +82,10 @@
       <Project>{055927B3-3CCA-4B42-B66D-8A51892576AC}</Project>
       <Name>OpenCookly.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OpenCookly.Common.Modules\OpenCookly.Common.Modules.csproj">
+      <Project>{7C0C99F6-9542-4CBA-B8A2-33E7BA702AD3}</Project>
+      <Name>OpenCookly.Common.Modules</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="StartupTasks\" />

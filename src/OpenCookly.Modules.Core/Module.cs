@@ -1,5 +1,5 @@
 using System;
-using OpenCookly.Common;
+using OpenCookly.Common.Modules;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 

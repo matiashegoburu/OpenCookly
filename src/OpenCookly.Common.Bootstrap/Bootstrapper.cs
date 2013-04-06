@@ -13,43 +13,47 @@ using Bootstrap;
 using Bootstrap.StructureMap;
 using Bootstrap.Extensions.StartupTasks;
 using OpenCookly.Common.Bootstrap.StartupTasks;
+using OpenCookly.Common.Modules;
 
 namespace OpenCookly.Common.Bootstrap
 {
-	public class BootStrapper
-	{
-		[ImportMany(typeof(IModule))]
-		private IEnumerable<IModule>
-			_modules;
+    public class BootStrapper
+    {
+        [ImportMany(typeof(IModule))]
+        private IEnumerable<IModule>
+            _modules;
 
-		public IEnumerable<IModule> Modules {
-			get { return _modules;}
-		}
+        public IEnumerable<IModule> Modules
+        {
+            get { return _modules;}
+        }
 
-		protected static BootStrapper _instance;
-		public static BootStrapper Instance {
-			get {
-				if (_instance == null)
-					_instance = new BootStrapper ();
+        protected static BootStrapper _instance;
+        public static BootStrapper Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new BootStrapper();
 
-				return _instance;
-			}
-		}
+                return _instance;
+            }
+        }
 
-		public static void Run ()
-		{
-			Instance.Bootstrap ();
-		}
+        public static void Run()
+        {
+            Instance.Bootstrap();
+        }
 
-		public void Bootstrap ()
-		{
-			Bootstrapper
+        public void Bootstrap()
+        {
+            Bootstrapper
 				.With
-					.StructureMap ()
-					.And.StartupTasks ()
-						.UsingThisExecutionOrder (o => o.First<SetupServiceLocator> ())
-				.Start ();
-		}
-	}
+					.StructureMap()
+					.And.StartupTasks()
+						.UsingThisExecutionOrder(o => o.First<SetupServiceLocator>())
+				.Start();
+        }
+    }
 }
 
