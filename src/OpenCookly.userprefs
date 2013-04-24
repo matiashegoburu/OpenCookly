@@ -9,7 +9,7 @@
       <File FileName="OpenCookly.Common.Interception/BaseSetterAspect.cs" Line="8" Column="41" />
       <File FileName="OpenCookly.Common.Interception/PropertyChangedInterceptionAttribute.cs" Line="6" Column="83" />
       <File FileName="OpenCookly.Common.Interception/BaseSetterInterceptor.cs" Line="20" Column="38" />
-      <File FileName="OpenCookly.Modules.Core.UI/Models/RecipeModel.cs" Line="1" Column="1" />
+      <File FileName="OpenCookly.Modules.Core.UI/Models/RecipeModel.cs" Line="15" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

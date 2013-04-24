@@ -23,8 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Common.UI", "Ope
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Modules.Core.UI", "OpenCookly.Modules.Core.UI\OpenCookly.Modules.Core.UI.csproj", "{4B2D5151-D245-4BF4-967F-341EDDBB0A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCookly.Common.Interception", "OpenCookly.Common.Interception\OpenCookly.Common.Interception.csproj", "{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -68,12 +66,6 @@ Global
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Debug|x86.Build.0 = Debug|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.ActiveCfg = Release|Any CPU
 		{7D4A4BC7-AF6B-4607-9651-A8BF22A561A2}.Release|x86.Build.0 = Release|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Debug|x86.Build.0 = Debug|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Release|x86.ActiveCfg = Release|Any CPU
-		{8F4FFC63-62F8-4F01-BBE6-FFE2E92072D6}.Release|x86.Build.0 = Release|Any CPU
 		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE1D558-904C-4FA6-97A2-C8D6EE00B750}.Debug|x86.ActiveCfg = Debug|Any CPU

@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Models\RecipeModel.cs" />
+    <Compile Include="Models\TagModel.cs" />
+    <Compile Include="Models\IngredientInReceipeModel.cs" />
+    <Compile Include="Models\IngredientModel.cs" />
   </ItemGroup>
   <PropertyGroup>
     <DontImportPostSharp>True</DontImportPostSharp>

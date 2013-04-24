@@ -10,6 +10,9 @@ namespace OpenCookly.Modules.Core.Entities
         public virtual decimal Quantity { get; set; }
         public virtual Unit Unit { get; set; }
         public virtual string Comments { get; set; }
+
+
+
     }
 }
 

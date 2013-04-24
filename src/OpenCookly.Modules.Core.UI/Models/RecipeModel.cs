@@ -8,72 +8,22 @@ namespace OpenCookly.Modules.Core.UI.Models
 {
     public class RecipeModel : BaseEntityModel<Recipe>
     {
-        public RecipeModel(Recipe item)
-            : base(item)
-        {
-            
-        }
+        public virtual string Name { get; set; }
+        public virtual string Description{ get; set; }
+        public virtual decimal Rating{ get; set; }
+        public virtual int Servings{ get; set; }
 
-        private string _name;
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                _name = value;
-                OnPropertyChanged("Name");
-            }
-        }
+        public virtual TimeSpan PreparationTime { get; set; }
+        public virtual TimeSpan CookingTime { get; set; }
+        public virtual ModelList<TagModel, Tag> Tags { get; set; }
+        public virtual ICollection<IngredientInRecipe> Ingredients { get; set; }
+        public virtual string Directions { get; set; }
 
-        private string _description;
-        public string Description
+        protected override void Initialize(Recipe item)
         {
-            get
-            {
-                return _description;
-            }
-            set
-            {
-                _description = value;
-                OnPropertyChanged("Description");
-            }
-        }
-
-        private decimal _rating;
-        public decimal Rating
-        {
-            get
-            {
-                return _rating;
-            }
-            set
-            {
-                _rating = value;
-                OnPropertyChanged("Rating");
-            }
-        }
-
-        private int _servings;
-
-        public int Servings
-        {
-            get
-            {
-                return _servings;
-            }
-            set
-            {
-                _servings = value;
-            }
-        }
-        public TimeSpan PreparationTime { get; set; }
-        public TimeSpan CookingTime { get; set; }
-        public ICollection<Tag> Tags { get; set; }
-        public ICollection<IngredientInRecipe> Ingredients { get; set; }
-        public string Directions { get; set; }
+            base.Initialize(item);
+            Tags = new ModelList<TagModel, Tag>(item.Tags);
+        } 
     }
 }
 
