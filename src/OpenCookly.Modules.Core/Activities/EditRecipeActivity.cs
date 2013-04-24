@@ -33,6 +33,12 @@ namespace OpenCookly.Modules.Core.Activities
                 throw new System.NotImplementedException();
             }
         }
+
+        public Bin Start()
+        {
+            throw new System.NotImplementedException();
+        }
+
         #endregion
 
     }
