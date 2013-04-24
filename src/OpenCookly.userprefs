@@ -1,29 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OpenCookly.Modules.Core.UI/Models/RecipeModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenCookly.Modules.Core/Module.cs">
     <Files>
-      <File FileName="OpenCookly.Modules.Core/Module.cs" Line="21" Column="13" />
-      <File FileName="OpenCookly.Common.Interception/PropertyChangedInterceptor.cs" Line="17" Column="10" />
-      <File FileName="OpenCookly.Common.Interception/BaseAspect.cs" Line="7" Column="58" />
-      <File FileName="OpenCookly.Common.Interception/BaseInterceptor.cs" Line="19" Column="90" />
-      <File FileName="OpenCookly.Common.Interception/BaseSetterAspect.cs" Line="8" Column="41" />
-      <File FileName="OpenCookly.Common.Interception/PropertyChangedInterceptionAttribute.cs" Line="6" Column="83" />
-      <File FileName="OpenCookly.Common.Interception/BaseSetterInterceptor.cs" Line="20" Column="38" />
-      <File FileName="OpenCookly.Modules.Core.UI/Models/RecipeModel.cs" Line="15" Column="7" />
+      <File FileName="OpenCookly.Modules.Core/Module.cs" Line="30" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="OpenCookly.Common.Bootstrap" expanded="True">
-            <Node name="StartupTasks" expanded="True" />
+          <Node name="OpenCookly.Common.UI" expanded="True">
+            <Node name="References" expanded="True" />
           </Node>
-          <Node name="OpenCookly.Common.Interception" expanded="True" />
-          <Node name="OpenCookly.Modules.Core" expanded="True" />
+          <Node name="OpenCookly.Modules.Core" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Activities" expanded="True" />
+            <Node name="Module.cs" selected="True" />
+          </Node>
+          <Node name="OpenCookly.Modules.Core.Entities" expanded="True" />
           <Node name="OpenCookly.Modules.Core.UI" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Models" expanded="True">
-              <Node name="RecipeModel.cs" selected="True" />
-            </Node>
+            <Node name="Models" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -181,7 +176,6 @@
       <Catchpoint exceptionName="System.TypeUnloadedException" />
       <Catchpoint exceptionName="System.UnauthorizedAccessException" />
       <Catchpoint exceptionName="System.UriFormatException" />
-      <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.Modules.Core/Module.cs" line="20" />
       <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.Modules.Core.UI/TraceAttribute.cs" line="38" />
       <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.Modules.Core.UI/MyClass.cs" line="9" />
       <Breakpoint file="/home/matias/Documents/Proyectos/Mono/OpenCookly/src/OpenCookly.Modules.Core.UI/TraceAttribute.cs" line="58" />

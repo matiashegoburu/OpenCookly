@@ -34,10 +34,18 @@
       <HintPath>..\..\lib\Bootstrapper.StructureMap 2.0.3.0\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Hegoburu.Presentation.Desktop.Core">
+      <HintPath>..\..\lib\Hegoburu.Presentation.Desktop.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Module.cs" />
+    <Compile Include="Activities\EditRecipeActivity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -45,5 +53,8 @@
       <Project>{7C0C99F6-9542-4CBA-B8A2-33E7BA702AD3}</Project>
       <Name>OpenCookly.Common.Modules</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activities\" />
   </ItemGroup>
 </Project>

@@ -5,9 +5,9 @@ using OpenCookly.Common.UI;
 
 namespace OpenCookly.Modules.Core.UI.Models
 {
-    public class TagModel : BaseEntityModel<Tag>
+    public class UnitModel : BaseEntityModel<Unit>
     {
-        public virtual string Name { get; set; }
+       
     }
 }
 

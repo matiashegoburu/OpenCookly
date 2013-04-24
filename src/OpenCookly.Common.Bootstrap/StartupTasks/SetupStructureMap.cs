@@ -4,6 +4,7 @@ using Hegoburu.DAL.Core;
 using Hegoburu.DAL.Core.NHibernate;
 using Bootstrap;
 using StructureMap;
+using Hegoburu.Presentation.Desktop.Core;
 
 namespace OpenCookly.Common.Bootstrap.StartupTasks
 {
@@ -23,6 +24,8 @@ namespace OpenCookly.Common.Bootstrap.StartupTasks
                 );
 
                 c.For(typeof(IRepository<>)).Use(typeof(Repository<>));
+                c.For<IModelManager>().Use(ModelManager.Instance);
+                c.For<IViewManager>().Use(ViewManager.Instance);
             }
             );
         }

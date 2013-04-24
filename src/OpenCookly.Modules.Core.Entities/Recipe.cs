@@ -12,8 +12,8 @@ namespace OpenCookly.Modules.Core.Entities
         public virtual int Servings { get; set; }
         public virtual TimeSpan PreparationTime { get; set; }
         public virtual TimeSpan CookingTime { get; set; }
-        public virtual ICollection<Tag> Tags { get; set; }
-        public virtual ICollection<IngredientInRecipe> Ingredients { get; set; }
+        public virtual List<Tag> Tags { get; set; }
+        public virtual List<IngredientInRecipe> Ingredients { get; set; }
         public virtual string Directions { get; set; }
     }
 }

@@ -1,10 +1,11 @@
 using System;
 using OpenCookly.Modules.Core.Entities;
 using Hegoburu.Presentation.Desktop.Core;
+using OpenCookly.Common.UI;
 
 namespace OpenCookly.Modules.Core.UI.Models
 {
-    public class IngredientInReceipeModel : Model<IngredientInRecipe>
+    public class IngredientInReceipeModel : BaseEntityModel<IngredientInRecipe>
     {      
         public virtual RecipeModel Recipe { get; set; }
         public virtual IngredientModel Ingredient { get; set; }
@@ -15,8 +16,8 @@ namespace OpenCookly.Modules.Core.UI.Models
         protected override void Initialize(IngredientInRecipe item)
         {
             base.Initialize(item);
-            IngredientModel = ModelManager.GetInstance().Get<IngredientModel, Ingredient>(item.Ingredient);
-            UnitModel = ModelManager.GetInstance().Get<UnitModel, Unit>(item.Unit);
+            Ingredient = ModelManager.Instance.Get<IngredientModel, Ingredient>(item.Ingredient);
+            Unit = ModelManager.Instance.Get<UnitModel, Unit>(item.Unit);
         } 
     }
 }

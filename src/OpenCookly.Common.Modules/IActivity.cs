@@ -7,8 +7,7 @@ namespace OpenCookly.Common.Modules
     {
         string Name { get; }
         string Description { get; }
-        Bin MainView { get; } 
-        void Run();
+        Bin View { get; } 
     }
 }
 

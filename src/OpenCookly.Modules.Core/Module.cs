@@ -2,6 +2,7 @@ using System;
 using OpenCookly.Common.Modules;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using Hegoburu.Presentation.Desktop.Core;
 
 namespace OpenCookly.Modules.Core
 {
@@ -18,7 +19,7 @@ namespace OpenCookly.Modules.Core
         #region IModule implementation
         public void Initialize(StructureMap.IContainer container)
         {
-
+            container.BuildUp(this);
         }
 
         public string Name
@@ -44,7 +45,13 @@ namespace OpenCookly.Modules.Core
                 return _activities;
             }
         }
+
+        public IViewManager ViewManager{ get; set; }
+
+        public IModelManager ModelManager{ get; set; }
+
         #endregion
+
 		
     }
 }
